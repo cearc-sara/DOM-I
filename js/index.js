@@ -58,6 +58,8 @@ navLink5.textContent = siteContent["nav"]["nav-item-5"];
 navLink6.textContent = siteContent["nav"]["nav-item-6"];
 
 
+
+
 const section1 = document.querySelector(".cta");
 
 const sec1Header = section1.querySelector(".cta-text h1");
@@ -69,5 +71,21 @@ sec1Button.textContent = siteContent["cta"]["button"];
 const sec1Img = section1.querySelector("#cta-img");
 sec1Img.setAttribute('src', siteContent["cta"]["img-src"]);
 
+
+
+
+
+
 const section2 = document.querySelector(".main-content");
 
+const sec2Title1 = section2.querySelector(".text-content:nth-of-type(1) h4");
+sec2Title1.textContent = siteContent["main-content"]["features-h4"];
+
+const sec2Text1 = section2.querySelector(".text-content:nth-of-type(1) p");
+sec2Text1.textContent = siteContent["main-content"]["features-content"];
+
+const sec2Title2 = section2.querySelector(".text-content:nth-of-type(2) h4");
+sec2Title2.textContent = siteContent["main-content"]["about-h4"];
+
+const sec2Text2 = section2.querySelector(".text-content:nth-of-type(2) p");
+sec2Text2.textContent = siteContent["main-content"]["about-content"];
