@@ -41,7 +41,25 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+
 const navBar = document.querySelectorAll("nav a");
+
+
+const blogLink = document.createElement('a')
+blogLink.textContent = 'Blog'
+blogLink.href = 'a'
+
+const nav = document.querySelector('nav')
+nav.appendChild(blogLink)
+
+const socialLink = document.createElement('a')
+socialLink.textContent = 'Social'
+socialLink.href = 'a'
+
+nav.prepend(socialLink)
+
+
 
 const navLink1 = navBar[0];
 const navLink2 = navBar[1];
@@ -59,27 +77,14 @@ navLink6.textContent = siteContent["nav"]["nav-item-6"];
 
 
 
-const blogLink = document.createElement('a')
-blogLink.textContent = 'Blog'
-blogLink.href = 'a'
-
-const nav = document.querySelector('nav')
-nav.appendChild(blogLink)
-
-const socialLink = document.createElement('a')
-socialLink.textContent = 'Social'
-socialLink.href = 'a'
-
-const newNav = document.querySelector('nav')
-nav.prepend(socialLink)
-
-
 
 
 
 Array.from(navBar).forEach(links => {
   links.style.color = 'green';
 })
+
+
 
 
 
@@ -94,6 +99,8 @@ sec1Button.textContent = siteContent["cta"]["button"];
 
 const sec1Img = section1.querySelector("#cta-img");
 sec1Img.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
 
 
 
@@ -118,6 +125,8 @@ sec2Text2.textContent = siteContent["main-content"]["about-content"];
 
 const sec2Img = section2.querySelector("#middle-img");
 sec2Img.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
 
 
 
@@ -168,6 +177,11 @@ contPho.textContent = siteContent["contact"]["phone"];
 
 const contEma = contInfo.querySelector("p:nth-of-type(3)");
 contEma.textContent = siteContent["contact"]["email"];
+
+
+
+
+
 
 
 
